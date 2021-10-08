@@ -9,8 +9,8 @@ Project results of UNIKATE project kissenschalter (configuration files, document
 ## User Documentation
 
 Please have a look at the
-* [presentation slides](./solution-final/doc/Benutzerhandbuch-UNIKATE-Projekt-Kissenschalter.pdf)
-* [User documentation](./solution-final/Projekt%20Kissenschalter-UNIKATEWS2020-20210916.pdf)
+* [User Handbook](./solution-final/doc/Benutzerhandbuch-UNIKATE-Projekt-Kissenschalter.pdf)
+* [Presentation Slides](./solution-final/doc/Projekt%20Kissenschalter-UNIKATEWS2020-20210916.pdf)
 * [Equipment List](./solution-final/UNIKATE_Equipment_Liste.pdf)
 
 ## Project files
