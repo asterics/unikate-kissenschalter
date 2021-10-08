@@ -6,10 +6,10 @@ Project results of UNIKATE project kissenschalter (configuration files, document
 
 ## Demo Videos
 
-* ![Demo of Kissenklang](https://youtu.be/5d4WYjJhgug)
-* ![Demo of controlling toy robot](https://youtu.be/9z9Q-3h2CdI)
-* ![Demo of controlling soap bubble machine](https://youtu.be/aatYWlpXNeQ)
-* ![Demo of controlling disco lights](https://youtu.be/Mp3Usqg8MDo)
+* [Demo of Kissenklang](https://youtu.be/5d4WYjJhgug)
+* [Demo of controlling toy robot](https://youtu.be/9z9Q-3h2CdI)
+* [Demo of controlling soap bubble machine](https://youtu.be/aatYWlpXNeQ)
+* [Demo of controlling disco lights](https://youtu.be/Mp3Usqg8MDo)
 
 ## User Documentation
 
