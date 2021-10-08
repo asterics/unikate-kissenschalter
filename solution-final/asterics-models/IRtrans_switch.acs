@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" modelName="C:\Users\43650\Desktop\ws2020-vkkj-ma\solution-final\AsTeRICS_Modelle\IRtrans_switch.acs_2021_6_29_23_22" version="20130320">
+  <modelDescription>
+    <shortDescription />
+    <requirements />
+    <description />
+  </modelDescription>
+  <components>
+    <component id="ComPort.1" type_id="asterics.ComPort">
+      <description>interfaces a (virtual) COM Port for data send/receive  operations</description>
+      <ports>
+        <inputPort portTypeID="send">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="received">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="enabled" value="true" />
+        <property name="ComPort" value="COM3" />
+        <property name="BaudRate" value="9600" />
+        <property name="ReceivedDataType" value="0" />
+        <property name="SendDataType" value="1" />
+      </properties>
+      <layout>
+        <posX>269</posX>
+        <posY>51</posY>
+      </layout>
+    </component>
+    <component id="StringDispatcher.1" type_id="asterics.StringDispatcher">
+      <description>Send text from chosen slot</description>
+      <ports>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+        <inputPort portTypeID="slotDispatch">
+          <properties />
+        </inputPort>
+      </ports>
+      <properties>
+        <property name="delay" value="300" />
+        <property name="slot1" value="AT SO 0" />
+        <property name="slot2" value="AT SO 1" />
+        <property name="slot3" value="AT ER" />
+        <property name="slot4" value="" />
+        <property name="slot5" value="" />
+        <property name="slot6" value="" />
+        <property name="slot7" value="" />
+        <property name="slot8" value="" />
+        <property name="slot9" value="" />
+        <property name="slot10" value="" />
+        <property name="slot11" value="" />
+        <property name="slot12" value="" />
+        <property name="slot13" value="" />
+        <property name="slot14" value="" />
+        <property name="slot15" value="" />
+        <property name="slot16" value="" />
+        <property name="slot17" value="" />
+        <property name="slot18" value="" />
+        <property name="slot19" value="" />
+        <property name="slot20" value="" />
+      </properties>
+      <layout>
+        <posX>52</posX>
+        <posY>136</posY>
+      </layout>
+    </component>
+    <component id="Sent_TextArea.1" type_id="asterics.TextArea">
+      <description>GUI component, which displays text.</description>
+      <ports>
+        <inputPort portTypeID="setText">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="appendText">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="text">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="caption" value="Gesendete Kommandos" />
+        <property name="default" value="" />
+        <property name="editable" value="false" />
+        <property name="fontSize" value="14" />
+        <property name="textColor" value="0" />
+        <property name="backgroundColor" value="11" />
+        <property name="displayGUI" value="true" />
+      </properties>
+      <layout>
+        <posX>271</posX>
+        <posY>214</posY>
+      </layout>
+      <gui>
+        <posX>72</posX>
+        <posY>565</posY>
+        <width>1562</width>
+        <height>1222</height>
+      </gui>
+    </component>
+    <component id="Received_TextArea.1.1" type_id="asterics.TextArea">
+      <description>GUI component, which displays text.</description>
+      <ports>
+        <inputPort portTypeID="setText">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="appendText">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="text">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="caption" value="Empfangene Kommandos" />
+        <property name="default" value="" />
+        <property name="editable" value="false" />
+        <property name="fontSize" value="14" />
+        <property name="textColor" value="0" />
+        <property name="backgroundColor" value="11" />
+        <property name="displayGUI" value="true" />
+      </properties>
+      <layout>
+        <posX>427</posX>
+        <posY>47</posY>
+      </layout>
+      <gui>
+        <posX>72</posX>
+        <posY>1898</posY>
+        <width>1562</width>
+        <height>1222</height>
+      </gui>
+    </component>
+    <component id="AutostartEvent.1" type_id="asterics.AutostartEvent">
+      <description>Sends the event after model start, with defined delay.</description>
+      <ports />
+      <properties>
+        <property name="Delay" value="1000" />
+      </properties>
+      <layout>
+        <posX>141</posX>
+        <posY>328</posY>
+      </layout>
+    </component>
+  </components>
+  <channels>
+    <channel id="binding.0">
+      <source>
+        <component id="StringDispatcher.1" />
+        <port id="output" />
+      </source>
+      <target>
+        <component id="ComPort.1" />
+        <port id="send" />
+      </target>
+    </channel>
+    <channel id="binding.1">
+      <source>
+        <component id="StringDispatcher.1" />
+        <port id="output" />
+      </source>
+      <target>
+        <component id="Sent_TextArea.1" />
+        <port id="appendText" />
+      </target>
+    </channel>
+    <channel id="binding.2">
+      <source>
+        <component id="ComPort.1" />
+        <port id="received" />
+      </source>
+      <target>
+        <component id="Received_TextArea.1.1" />
+        <port id="appendText" />
+      </target>
+    </channel>
+  </channels>
+  <eventChannels>
+    <eventChannel id="output_dispatchSlot3">
+      <description />
+      <sources>
+        <source>
+          <component id="AutostartEvent.1" />
+          <eventPort id="output" />
+        </source>
+      </sources>
+      <targets>
+        <target>
+          <component id="StringDispatcher.1" />
+          <eventPort id="dispatchSlot3" />
+        </target>
+      </targets>
+    </eventChannel>
+  </eventChannels>
+  <modelGUI>
+    <Decoration>true</Decoration>
+    <Fullscreen>false</Fullscreen>
+    <AlwaysOnTop>false</AlwaysOnTop>
+    <ToSystemTray>false</ToSystemTray>
+    <ShopControlPanel>true</ShopControlPanel>
+    <AREGUIWindow>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2188</width>
+      <height>3222</height>
+    </AREGUIWindow>
+  </modelGUI>
+</model>

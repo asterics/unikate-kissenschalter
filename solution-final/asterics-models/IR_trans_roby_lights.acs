@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" modelName="C:\Users\43650\Desktop\ws2020-vkkj-ma\solution-final\AsTeRICS_Modelle\IR_trans_roby_lights.acs_2021_6_29_22_33" version="20130320">
+  <modelDescription>
+    <shortDescription />
+    <requirements />
+    <description />
+  </modelDescription>
+  <components>
+    <component id="IrTrans.1" type_id="asterics.IrTrans">
+      <description>Infrared Transmission Module, interfaces to the IrTrans device</description>
+      <ports>
+        <inputPort portTypeID="action">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="outputResult">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="hostname" value="localhost" />
+        <property name="port" value="21000" />
+        <property name="prestring" value="snd robosapien," />
+        <property name="send1" value="hi!" />
+        <property name="send2" value="wake up1" />
+        <property name="send3" value="step!" />
+        <property name="send4" value="back!" />
+        <property name="send5" value="burp!" />
+        <property name="send6" value="stop" />
+        <property name="send7" value="dance" />
+        <property name="send8" value="pick up" />
+        <property name="send9" value="strike1" />
+        <property name="send10" value="right" />
+        <property name="send11" value="left" />
+        <property name="send12" value="demo" />
+        <property name="send13" value="" />
+        <property name="send14" value="" />
+        <property name="send15" value="" />
+        <property name="send16" value="" />
+        <property name="send17" value="" />
+        <property name="send18" value="" />
+        <property name="send19" value="" />
+        <property name="send20" value="" />
+        <property name="send21" value="" />
+        <property name="send22" value="" />
+        <property name="send23" value="" />
+        <property name="send24" value="" />
+      </properties>
+      <layout>
+        <posX>126</posX>
+        <posY>28</posY>
+      </layout>
+    </component>
+    <component id="IrTrans.2" type_id="asterics.IrTrans">
+      <description>Infrared Transmission Module, interfaces to the IrTrans device</description>
+      <ports>
+        <inputPort portTypeID="action">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="outputResult">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="hostname" value="localhost" />
+        <property name="port" value="21000" />
+        <property name="prestring" value="snd omeril_disco," />
+        <property name="send1" value="on_off" />
+        <property name="send2" value="motor_start_stop" />
+        <property name="send3" value="music1" />
+        <property name="send4" value="music2" />
+        <property name="send5" value="music3" />
+        <property name="send6" value="flash" />
+        <property name="send7" value="blau" />
+        <property name="send8" value="gruen" />
+        <property name="send9" value="rot" />
+        <property name="send10" value="gruen_blau" />
+        <property name="send11" value="rot_gruen" />
+        <property name="send12" value="rot_blau" />
+        <property name="send13" value="auto" />
+        <property name="send14" value="motor_speed_minus" />
+        <property name="send15" value="motor_speed_plus" />
+        <property name="send16" value="" />
+        <property name="send17" value="" />
+        <property name="send18" value="" />
+        <property name="send19" value="" />
+        <property name="send20" value="" />
+        <property name="send21" value="" />
+        <property name="send22" value="" />
+        <property name="send23" value="" />
+        <property name="send24" value="" />
+      </properties>
+      <layout>
+        <posX>283</posX>
+        <posY>34</posY>
+      </layout>
+    </component>
+    <component id="IrTrans.3" type_id="asterics.IrTrans">
+      <description>Infrared Transmission Module, interfaces to the IrTrans device</description>
+      <ports>
+        <inputPort portTypeID="action">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="outputResult">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="hostname" value="localhost" />
+        <property name="port" value="21000" />
+        <property name="prestring" value="snd handy-lux," />
+        <property name="send1" value="ein" />
+        <property name="send2" value="aus" />
+        <property name="send3" value="hell" />
+        <property name="send4" value="multicolor" />
+        <property name="send5" value="rot_11" />
+        <property name="send6" value="gruen_12" />
+        <property name="send7" value="violett_13" />
+        <property name="send8" value="orange_21" />
+        <property name="send9" value="gruen_22" />
+        <property name="send10" value="violett_23" />
+        <property name="send11" value="gelb_31" />
+        <property name="send12" value="blau_32" />
+        <property name="send13" value="violett_33" />
+        <property name="send14" value="gelb_41" />
+        <property name="send15" value="blau_42" />
+        <property name="send16" value="rosa_43" />
+        <property name="send17" value="" />
+        <property name="send18" value="" />
+        <property name="send19" value="" />
+        <property name="send20" value="" />
+        <property name="send21" value="" />
+        <property name="send22" value="" />
+        <property name="send23" value="" />
+        <property name="send24" value="" />
+      </properties>
+      <layout>
+        <posX>458</posX>
+        <posY>34</posY>
+      </layout>
+    </component>
+  </components>
+  <modelGUI>
+    <Decoration>true</Decoration>
+    <Fullscreen>false</Fullscreen>
+    <AlwaysOnTop>false</AlwaysOnTop>
+    <ToSystemTray>false</ToSystemTray>
+    <ShopControlPanel>true</ShopControlPanel>
+    <AREGUIWindow>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>3812</width>
+      <height>5667</height>
+    </AREGUIWindow>
+  </modelGUI>
+</model>
