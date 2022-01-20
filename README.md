@@ -25,4 +25,4 @@ The project files used can be found in the subfolder [solution-final](solution-f
 ## FABI Modifications
 
 As input device the Flexible Assistive Button Interface (FABI) was used. It has many input ports for Assistive Switches and an air pressure sensor which was connected with the blood pressure cuff.
-In order to switch the soap bubble machine and other battery-powerd toys the FABI was modified with a transistor. Have a look at the [FABI repository](https://github.com/asterics/FABI/tree/deinhofer/switching-output-port#fabi-switching-output-port-branch) for a detailed description.
+In order to [switch the soap bubble machine]((https://youtu.be/aatYWlpXNeQ)) and other battery-powerd toys the FABI was modified with a transistor. Have a look at the [FABI repository](https://github.com/asterics/FABI/tree/deinhofer/switching-output-port#fabi-switching-output-port-branch) for a detailed description.
