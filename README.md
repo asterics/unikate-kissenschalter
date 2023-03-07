@@ -18,9 +18,9 @@ Please have a look at the
 * [Presentation Slides](./solution-final/doc/Projekt%20Kissenschalter-UNIKATEWS2020-20210916.pdf)
 * [Equipment List](./solution-final/doc/UNIKATE_Equipment_Liste.pdf)
 
-## Project files
+## Project files / Installation Instructions
 
-The project files used can be found in the subfolder [solution-final](solution-final/)
+The project files and installation instructions can be found in the subfolder [solution-final](solution-final/)
 
 ## FABI Modifications
 
