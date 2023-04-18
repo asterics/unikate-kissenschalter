@@ -14,8 +14,8 @@ Project results of UNIKATE project kissenschalter (see [UNIKATE Ideenwettbewerb 
 ## User Documentation
 
 Please have a look at the
-* [User Handbook](./solution-final/doc/Benutzerhandbuch-UNIKATE-Projekt-Kissenschalter.pdf)
-* [Presentation Slides](./solution-final/doc/Projekt%20Kissenschalter-UNIKATEWS2020-20210916.pdf)
+* [User Handbook](./solution-final/doc/Benutzerhandbuch-UNIKATE-Projekt-Kissenschalter-en-US.pdf)
+* [Presentation Slides](./solution-final/doc/Projekt%20Kissenschalter-UNIKATEWS2020-20210916-en-US.pdf)
 * [Equipment List](./solution-final/doc/UNIKATE_Equipment_Liste.pdf)
 
 ## Project files / Installation Instructions
