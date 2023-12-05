@@ -8,7 +8,8 @@ Install the [Asterics Framework (v4.x)](https://github.com/asterics/AsTeRICS/rel
 
 The toy robot and the disco lights are remote controlled with a programmable infrared device. 
 1. In order to enable IRTrans support for the AsTeRICS Framework, the [IRTrans Windows Software](http://www.irtrans.de/de/download/windows.php) must be installed. Please ensure to select the **USB mode** during installation process.
-2. Then the IR-command definitions for the toy robot and the disco lights must be installed by copying them to the folder for the remotes.
+2. Then the **IR-command definitions (remotes)** for the toy robot and the disco lights must be installed by copying them to the remotes folder. On Windows 10 this is typically ```C:\ProgramData\IRTrans\remotes```.
+3. Finally start / restart the IRTrans-Server software (```IRTransServer USB```). Either search for the command in the windows search window or open the menu in the system tray and select ```IR Server starten```.
 
 For details on how to install and test it, see [AsTeRICS IRTrans plugin](https://www.asterics.eu/plugins/actuators/IRTrans.html#requirements).
 
